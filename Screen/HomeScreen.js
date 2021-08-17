@@ -1,28 +1,16 @@
 import React from "react";
-import { StyleSheet, Text, View, SafeAreaView } from "react-native";
+import { StyleSheet, Image, View, SafeAreaView } from "react-native";
 import tw from "tailwind-react-native-classnames";
 const HomeScreen = () => {
   return (
-    <SafeAreaView
-      style={[
-        tw`bg-red-900 h-full`,
-        {
-          margin: 10,
-        },
-        styles.container,
-      ]}
-    >
-      <Text
-        style={[
-          tw`text-red-500 pt-10`,
-          styles.Text,
-          {
-            color: "blue",
-          },
-        ]}
-      >
-        Akshay Solanki
-      </Text>
+    <SafeAreaView style={tw`bg-white h-full`}>
+      <View>
+        <Image
+          source={{
+            uri: "https://links.papareact.com/gzs",
+          }}
+        />
+      </View>
     </SafeAreaView>
   );
 };
@@ -36,6 +24,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   Text: {
-    fontSize: 50,
+    fontSize: 30,
   },
 });
